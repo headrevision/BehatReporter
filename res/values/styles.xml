@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light" />
+
+    <color name="group_background">#b9b9b9</color>
+    <color name="group_text">#555555</color>
+    <color name="result_passed_light">#dbffb4</color>
+    <color name="result_passed_medium">#8cbb5a</color>
+    <color name="result_passed_dark">#3d7700</color>
+    <color name="result_skipped_light">#e0ffff</color>
+    <color name="result_skipped_medium">#70ffff</color>
+    <color name="result_skipped_dark">#00ffff</color>
+    <color name="result_pending_light">#fcfb98</color>
+    <color name="result_pending_medium">#fbfa66</color>
+    <color name="result_pending_dark">#faf834</color>
+    <color name="result_undefined_light">@color/result_pending_dark</color>
+    <color name="result_undefined_medium">@color/result_pending_medium</color>
+    <color name="result_undefined_dark">@color/result_pending_light</color>
+    <color name="result_failed_light">#fffbd3</color>
+    <color name="result_failed_medium">#e17e70</color>
+    <color name="result_failed_dark">#c20000</color>
+
+</resources>

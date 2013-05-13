@@ -1,0 +1,27 @@
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewFlipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ExpandableListView
+        android:id="@+id/itemList1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+    <ExpandableListView
+        android:id="@+id/itemList2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+    <ExpandableListView
+        android:id="@+id/itemList3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</ViewFlipper>

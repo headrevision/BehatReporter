@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Behat</string>
+    <string name="heading_loading">Fetching&#8230;</string>
+    <string name="heading_report">Report %s ago</string>
+    <string name="heading_feature">Scenarios</string>
+    <string name="heading_scenario">Scenarios</string>
+    <string name="heading_background">Background</string>
+    <string name="heading_step">Steps</string>
+    <string name="heading_outline_example">Outline examples</string>
+    <string name="dialog_title">Fetch report</string>
+    <string name="dialog_hint">Enter URL of JSON file</string>
+    <string name="dialog_positive">OK</string>
+    <string name="dialog_negative">Cancel</string>
+    <string name="info_url_stored">URL saved</string>
+    <string name="info_report_loaded">Report fetched</string>
+
+</resources>
