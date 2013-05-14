@@ -1,7 +1,11 @@
 BehatReporter
 =============
 
-BehatReporter is a native Android app for viewing [Behat](https://github.com/Behat/Behat)'s output on your mobile or tablet.
+BehatReporter is a native Android app for viewing the output of the [Behat](https://github.com/Behat/Behat) command line tool on your mobile device.
+
+Why this app was developed?
+---------------------------
+Besides the fact that the app IS still in development, it was initially developed to enable Behat users (=you) to present the results of a Behat run in a form as accessible as possible to the non-developer stakeholders in the [BDD process](http://www.ymc.ch/en/behavior-driven-development-with-behat-co-more-than-just-testing).
 
 What do you need in order to use it?
 ------------------------------------
