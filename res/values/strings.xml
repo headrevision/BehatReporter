@@ -3,7 +3,7 @@
     <string name="app_name">Behat</string>
     <string name="heading_loading">Fetching&#8230;</string>
     <string name="heading_report">Report %s ago</string>
-    <string name="heading_feature">Scenarios</string>
+    <string name="heading_feature">Features</string>
     <string name="heading_scenario">Scenarios</string>
     <string name="heading_background">Background</string>
     <string name="heading_step">Steps</string>
