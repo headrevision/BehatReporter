@@ -35,3 +35,10 @@ How to use it?
 5. Install the signed APK on your Android device
 6. Start the app and enter the URL of the JSON file, eg. `http://some_local_host/output.json`
 7. Enjoy the experience, you deserved it :)
+
+License
+-------
+
+See [LICENSE](https://github.com/headrevision/BehatReporter/raw/master/LICENSE)
+
+Behat was created by [Konstantin Kudryashov](https://github.com/everzet), see [LICENSE](https://github.com/Behat/Behat/raw/master/LICENSE) 
