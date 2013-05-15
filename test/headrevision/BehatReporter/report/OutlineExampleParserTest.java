@@ -9,7 +9,7 @@ public class OutlineExampleParserTest extends AbstractParserTest {
 	public void testParsingOneOutlineExampleValue() {
 		OutlineExampleParser sut = new OutlineExampleParser(getJsonNode("{\"values\": {\"foo\": \"bar\"}}"));
 		try {
-			Assert.assertEquals("bar", sut.parseValues());
+			Assert.assertEquals("foo: bar", sut.parseValues());
 		} catch (ParserException e) {
 			Assert.fail(e.getMessage());
 		}
@@ -18,7 +18,7 @@ public class OutlineExampleParserTest extends AbstractParserTest {
 	public void testParsingTwoOutlineExampleValues() {
 		OutlineExampleParser sut = new OutlineExampleParser(getJsonNode("{\"values\": {\"foo\": \"bar\", \"bar\": \"baz\"}}"));
 		try {
-			Assert.assertEquals("bar | baz", sut.parseValues());
+			Assert.assertEquals("foo: bar\nbar: baz", sut.parseValues());
 		} catch (ParserException e) {
 			Assert.fail(e.getMessage());
 		}
