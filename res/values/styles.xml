@@ -19,9 +19,9 @@
     <color name="result_pending_light">#fcfb98</color>
     <color name="result_pending_medium">#dcdb60</color>
     <color name="result_pending_dark">#bcba27</color>
-    <color name="result_undefined_light">@color/result_pending_dark</color>
+    <color name="result_undefined_light">@color/result_pending_light</color>
     <color name="result_undefined_medium">@color/result_pending_medium</color>
-    <color name="result_undefined_dark">@color/result_pending_light</color>
+    <color name="result_undefined_dark">@color/result_pending_dark</color>
 
     <!-- http://www.colourlovers.com/palette/2852799/behat_failed -->
     <color name="result_failed_light">#fffbd3</color>
