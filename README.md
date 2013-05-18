@@ -22,19 +22,26 @@ What do you need in order to use it?
 
 - Behat 2.4+ with the [CommonFormatters extension](https://github.com/Behat/CommonFormatters/blob/master/doc/index.rst) installed
 - A web server for delivering JSON files via HTTP
-- The [Android SDK](http://developer.android.com/sdk/index.html) with the API version 17 installed
 - An Android device with Android 3.0+ ("Honeycomb")
+
+Get the app 
+-----------
+
+Install the app on your device via Google Play: [headrevision.BehatReporter](https://play.google.com/store/apps/details?id=headrevision.BehatReporter)
+
+Alternatively, you can also compile the app from the sources:
+1. Get the [Android SDK](http://developer.android.com/sdk/index.html) and install API version 17
+2. Clone this repository
+3. Follow the [instructions for compiling & signing an Android app](http://developer.android.com/tools/publishing/app-signing.html#releasemode)
+4. Install the signed APK on your Android device
 
 How to use it?
 --------------
 
 1. Run Behat as usual - but choose the [JsonFormatter](https://github.com/Behat/CommonFormatters/blob/master/src/Behat/CommonFormatters/JsonFormatter.php) this time: `$> bin/behat --format json > output.json`
 2. Put the file `output.json` on your web server
-3. Clone this repository
-4. Follow the [instructions for compiling & signing an Android app](http://developer.android.com/tools/publishing/app-signing.html#releasemode)
-5. Install the signed APK on your Android device
-6. Start the app and enter the URL of the JSON file, eg. `http://some_local_host/output.json`
-7. Enjoy the experience, you deserved it :)
+3. Start the app on your device and enter the URL of the JSON file, eg. `http://some_local_host/output.json`
+4. Enjoy the experience :)
 
 License
 -------
