@@ -21,16 +21,16 @@ public abstract class ItemsAdapter extends BaseExpandableListAdapter {
 
 	private int itemViewId;
 
-	private List<String> groupNames;
-
 	private List<List<JsonNode>> groupedItems;
+
+	private List<String> groupNames;
 
 	public ItemsAdapter(Activity activity, int itemViewId, List<JsonNode> items) {
 		super();
 		this.activity = activity;
 		this.itemViewId = itemViewId;
-		groupNames = getGroupNames();
 		groupedItems = getGroupedItems(items);
+		groupNames = getGroupNames(groupedItems);
 	}
 
 	@Override
@@ -103,9 +103,9 @@ public abstract class ItemsAdapter extends BaseExpandableListAdapter {
 
 	public abstract ItemsAdapterFactory getSubItemsAdapterFactory(JsonNode item);
 
-	protected abstract List<String> getGroupNames();
-
 	protected abstract List<List<JsonNode>> getGroupedItems(List<JsonNode> items);
+
+	protected abstract List<String> getGroupNames(List<List<JsonNode>> groupedItems);
 
 	protected abstract void setItemViewContent(View itemView, int groupPosition, int childPosition);
 

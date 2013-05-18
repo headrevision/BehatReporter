@@ -32,14 +32,6 @@ public class StepsAndOutlineExamplesAdapter extends StepsAdapter {
 	}
 
 	@Override
-	protected List<String> getGroupNames() {
-		List<String> groupNames = new ArrayList<String>();
-		groupNames.add(getGroupHeading(new StepsAdapterFactory()));
-		groupNames.add(getGroupHeading(new StepsAndOutlineExamplesAdapterFactory()));
-		return groupNames;
-	}
-
-	@Override
 	protected List<List<JsonNode>> getGroupedItems(List<JsonNode> items) {
 		List<List<JsonNode>> groupedItems = new ArrayList<List<JsonNode>>();
 		List<JsonNode> outlineSteps = new ArrayList<JsonNode>();
@@ -48,6 +40,14 @@ public class StepsAndOutlineExamplesAdapter extends StepsAdapter {
 		groupedItems.add(outlineExamples);
 		groupItems(items, outlineSteps, outlineExamples);
 		return groupedItems;
+	}
+
+	@Override
+	protected List<String> getGroupNames(List<List<JsonNode>> groupedItems) {
+		List<String> groupNames = new ArrayList<String>();
+		groupNames.add(getGroupHeading(new StepsAdapterFactory()));
+		groupNames.add(getGroupHeading(new StepsAndOutlineExamplesAdapterFactory()));
+		return groupNames;
 	}
 
 	@Override

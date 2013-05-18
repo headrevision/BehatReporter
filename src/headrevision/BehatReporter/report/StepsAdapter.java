@@ -32,22 +32,29 @@ public class StepsAdapter extends ItemsAdapter {
 	}
 
 	@Override
-	protected List<String> getGroupNames() {
-		List<String> groupNames = new ArrayList<String>();
-		groupNames.add(getGroupHeading("background"));
-		groupNames.add(getGroupHeading(new StepsAdapterFactory()));
-		return groupNames;
+	protected List<List<JsonNode>> getGroupedItems(List<JsonNode> items) {
+		List<List<JsonNode>> groupedItems = new ArrayList<List<JsonNode>>();
+
+		List<JsonNode> backgroundSteps = new ArrayList<JsonNode>();
+		List<JsonNode> steps = new ArrayList<JsonNode>();
+		groupItems(items, backgroundSteps, steps);
+
+		if (backgroundSteps.size() > 0) {
+			groupedItems.add(backgroundSteps);
+		}
+		groupedItems.add(steps);
+
+		return groupedItems;
 	}
 
 	@Override
-	protected List<List<JsonNode>> getGroupedItems(List<JsonNode> items) {
-		List<List<JsonNode>> groupedItems = new ArrayList<List<JsonNode>>();
-		List<JsonNode> backgroundSteps = new ArrayList<JsonNode>();
-		List<JsonNode> steps = new ArrayList<JsonNode>();
-		groupedItems.add(backgroundSteps);
-		groupedItems.add(steps);
-		groupItems(items, backgroundSteps, steps);
-		return groupedItems;
+	protected List<String> getGroupNames(List<List<JsonNode>> groupedItems) {
+		List<String> groupNames = new ArrayList<String>();
+		if (groupedItems.size() == 2) {
+			groupNames.add(getGroupHeading("background"));
+		}
+		groupNames.add(getGroupHeading(new StepsAdapterFactory()));
+		return groupNames;
 	}
 
 	@Override

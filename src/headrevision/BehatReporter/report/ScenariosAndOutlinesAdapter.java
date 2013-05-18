@@ -39,17 +39,17 @@ public class ScenariosAndOutlinesAdapter extends ItemsAdapter {
 	}
 
 	@Override
-	protected List<String> getGroupNames() {
-		List<String> groupNames = new ArrayList<String>();
-		groupNames.add(getGroupHeading(new ScenariosAndOutlinesAdapterFactory()));
-		return groupNames;
-	}
-
-	@Override
 	protected List<List<JsonNode>> getGroupedItems(List<JsonNode> items) {
 		List<List<JsonNode>> groupedItems = new ArrayList<List<JsonNode>>();
 		groupedItems.add(items);
 		return groupedItems;
+	}
+
+	@Override
+	protected List<String> getGroupNames(List<List<JsonNode>> groupedItems) {
+		List<String> groupNames = new ArrayList<String>();
+		groupNames.add(getGroupHeading(new ScenariosAndOutlinesAdapterFactory()));
+		return groupNames;
 	}
 
 	@Override
