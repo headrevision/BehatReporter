@@ -36,8 +36,6 @@ public class BehatReporterActivity extends Activity implements SetReportDialogLi
 		String reportUrl = ReportUrl.getInstance(this).retrieve();
 		if (reportUrl.equals("")) {
 			showSetReportDialog();
-		} else {
-			invalidateOptionsMenu();
 		}
 	}
 
