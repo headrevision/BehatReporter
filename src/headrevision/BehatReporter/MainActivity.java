@@ -19,7 +19,7 @@ import android.widget.ExpandableListView.OnChildClickListener;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
-public class BehatReporterActivity extends Activity implements SetReportDialogListener, LoaderTaskListener, OnChildClickListener {
+public class MainActivity extends Activity implements SetReportDialogListener, LoaderTaskListener, OnChildClickListener {
 
 	private DialogFragment dialog;
 
