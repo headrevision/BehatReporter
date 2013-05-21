@@ -38,7 +38,6 @@ public class BehatReporterActivity extends Activity implements SetReportDialogLi
 			showSetReportDialog();
 		} else {
 			invalidateOptionsMenu();
-			ReportHandler.getInstance(this).load(reportUrl, this);
 		}
 	}
 
