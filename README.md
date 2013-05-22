@@ -36,6 +36,7 @@ Install the app on your device via Google Play:
 </a>
 
 Alternatively, you can also compile the app from the sources:
+
 1. Get the [Android SDK](http://developer.android.com/sdk/index.html) and install API version 17
 2. Clone this repository
 3. Follow the [instructions for compiling & signing an Android app](http://developer.android.com/tools/publishing/app-signing.html#releasemode)
