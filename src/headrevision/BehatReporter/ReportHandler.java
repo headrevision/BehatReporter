@@ -51,7 +51,7 @@ public class ReportHandler {
 		ItemsAdapterFactory featuresAdapterFactory = new FeaturesAdapterFactory();
 
 		ListHandler.getInstance(activity).show(reportParser, features, featuresAdapterFactory, listener);
-		ItemDepth.getInstance(activity).start();
+		ItemDepth.getInstance(activity).jumpForwardToStart();
 	}
 
 }

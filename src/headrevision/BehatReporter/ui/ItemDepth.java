@@ -30,13 +30,13 @@ public class ItemDepth {
 		return instance;
 	}
 
-	public void start() {
+	public void jumpForwardToStart() {
 		animateForward();
 		viewFlipper.setDisplayedChild(0);
 		actionBar.setDisplayHomeAsUpEnabled(false);		
 	}
 
-	public void restart() {
+	public void jumpBackToStart() {
 		animateBack();
 		viewFlipper.setDisplayedChild(0);
 		actionBar.setTitle(ItemTitles.getInstance().clear());

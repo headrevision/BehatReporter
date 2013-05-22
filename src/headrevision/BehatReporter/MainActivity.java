@@ -88,7 +88,7 @@ public class MainActivity extends Activity implements SetReportDialogListener, L
 	public boolean onNavigateUp() {
 		ItemDepth itemDepth = ItemDepth.getInstance(this);
 		if (!itemDepth.isAtStart()) {
-			itemDepth.restart();
+			itemDepth.jumpBackToStart();
 		}
 
 		return true;
