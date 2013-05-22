@@ -3,6 +3,11 @@ BehatReporter
 
 BehatReporter is a native Android app for viewing the output of the [Behat](https://github.com/Behat/Behat) command line tool on your mobile device.
 
+<a href="https://play.google.com/store/apps/details?id=headrevision.BehatReporter">
+  <img alt="Android app on Google Play"
+       src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
+</a>
+
 Why this app was developed?
 ---------------------------
 Besides the fact that the app IS still in development, it was initially developed to enable Behat users (=you) to present the results of a Behat run in a form as accessible as possible to the non-developer stakeholders in the [BDD process](http://www.ymc.ch/en/behavior-driven-development-with-behat-co-more-than-just-testing). Have a look yourself:
@@ -27,7 +32,12 @@ What do you need in order to use it?
 Get the app 
 -----------
 
-Install the app on your device via Google Play: [headrevision.BehatReporter](https://play.google.com/store/apps/details?id=headrevision.BehatReporter)
+Install the app on your device via Google Play:
+
+<a href="https://play.google.com/store/apps/details?id=headrevision.BehatReporter">
+  <img alt="Android app on Google Play"
+       src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+</a>
 
 Alternatively, you can also compile the app from the sources:
 1. Get the [Android SDK](http://developer.android.com/sdk/index.html) and install API version 17
