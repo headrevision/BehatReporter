@@ -2,6 +2,7 @@ package headrevision.BehatReporter;
 
 import headrevision.BehatReporter.report.LoaderException;
 import headrevision.BehatReporter.report.LoaderTaskListener;
+import headrevision.BehatReporter.store.ReportJson;
 import headrevision.BehatReporter.store.ReportUrl;
 import headrevision.BehatReporter.ui.ItemDepth;
 import headrevision.BehatReporter.ui.Message;
@@ -32,6 +33,11 @@ public class MainActivity extends Activity implements SetReportDialogListener, L
 		setContentView(R.layout.main);
 
 		dialog = SetReportDialog.newInstance(this);
+
+		JsonNode reportJson = ReportJson.getInstance(this).retrieve();
+		if (reportJson != null) {
+			ReportHandler.getInstance(this).show(reportJson, this);
+		}
 
 		String reportUrl = ReportUrl.getInstance(this).retrieve();
 		if (reportUrl.equals("")) {
@@ -123,6 +129,7 @@ public class MainActivity extends Activity implements SetReportDialogListener, L
 		Message.getInstance(this).showInfo(R.string.info_report_loaded);
 		loaderTaskExecuted = true;
 		invalidateOptionsMenu();
+		ReportJson.getInstance(this).save(reportJson);
 	}
 
 	@Override

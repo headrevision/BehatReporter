@@ -1,18 +1,27 @@
 package headrevision.BehatReporter.json;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 
 public class ReaderTest extends TestCase {
 
+	public void testReadingEmptyJson() {
+		Reader sut = new Reader("");
+
+		try {
+			sut.read();
+
+			Assert.fail("expected ReaderException");
+		} catch (ReaderException e) {
+			Assert.assertTrue(e.getCause() instanceof JsonMappingException);
+		}		
+	}
+
 	public void testReadingMalformedJson() {
-		InputStream jsonStream = new ByteArrayInputStream("{\"foo\": }".getBytes());
-		Reader sut = new Reader(jsonStream);
+		Reader sut = new Reader("{\"foo\": }");
 
 		try {
 			sut.read();
@@ -24,8 +33,7 @@ public class ReaderTest extends TestCase {
 	}
 
 	public void testReadingWellformedJson() {
-		InputStream jsonStream = new ByteArrayInputStream("{\"foo\": \"bar\"}".getBytes());
-		Reader sut = new Reader(jsonStream);
+		Reader sut = new Reader("{\"foo\": \"bar\"}");
 
 		try {
 			sut.read();

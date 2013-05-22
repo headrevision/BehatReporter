@@ -1,5 +1,6 @@
 package headrevision.BehatReporter.json;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -15,6 +16,10 @@ public class Reader {
 
 	public Reader(InputStream jsonStream) {
 		this.jsonStream = jsonStream;
+	}
+
+	public Reader(String json) {
+		jsonStream = new ByteArrayInputStream(json.getBytes());
 	}
 
 	@SuppressWarnings("deprecation")
