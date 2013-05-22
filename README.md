@@ -12,15 +12,11 @@ Why this app was developed?
 ---------------------------
 Besides the fact that the app IS still in development, it was initially developed to enable Behat users (=you) to present the results of a Behat run in a form as accessible as possible to the non-developer stakeholders in the [BDD process](http://www.ymc.ch/en/behavior-driven-development-with-behat-co-more-than-just-testing). Have a look yourself:
 
-![Dialog](https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_dialog.png "Dialog")
-
-![Features](https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_features.png "Features")
-
-![Scenarios](https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_scenarios.png "Scenarios")
-
-![Background](https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_background.png "Background")
-
-![Outline](https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_outline.png "Outline")
+<a href="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_dialog.png"><img src="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_dialog.png" alt="Dialog" width="158" height="264"></a>
+<a href="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_features.png"><img src="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_features.png" alt="Features" width="264" height="158"></a>
+<a href="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_scenarios.png"><img src="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_scenarios.png" alt="Scenarios" width="158" height="264"></a>
+<a href="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_background.png"><img src="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_background.png" alt="Background" width="158" height="264"></a>
+<a href="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_outline.png"><img src="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_outline.png" alt="Outline" width="158" height="264"></a>
 
 What do you need in order to use it?
 ------------------------------------
