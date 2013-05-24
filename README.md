@@ -10,7 +10,7 @@ BehatReporter is a native Android app for viewing the output of the [Behat](http
 
 Why this app was developed?
 ---------------------------
-Besides the fact that the app IS still in development, it was initially developed to enable Behat users (=you) to present the results of a Behat run in a form as accessible as possible to the non-developer stakeholders in the [BDD process](http://www.ymc.ch/en/behavior-driven-development-with-behat-co-more-than-just-testing). Have a look yourself:
+It was developed to enable Behat users (=you) to present the results of a Behat run in a form as accessible as possible to the non-developer stakeholders in the [BDD process](http://www.ymc.ch/en/behavior-driven-development-with-behat-co-more-than-just-testing). Have a look yourself:
 
 <a href="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_dialog.png"><img src="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_dialog.png" alt="Dialog" width="158" height="264"></a>
 <a href="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_features.png"><img src="https://github.com/headrevision/BehatReporter/raw/master/doc/screenshot_features.png" alt="Features" width="264" height="158"></a>
